@@ -8,7 +8,7 @@ on:
 
 jobs:
   testing-jobs:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: testing first run
         run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
