@@ -13,3 +13,8 @@ jobs:
       - name: testing first run
         run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
 
+  new-jobs:
+    runs-on: self-hosted
+    steps:
+      - name: parallel
+        run: echo "parallel"
