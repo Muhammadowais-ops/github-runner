@@ -5,3 +5,11 @@ on:
     branches:
       - main        # Allow only on the 'main' branch
       - develop     # Optionally allow the 'develop' branch
+
+jobs:
+  testing-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: testing first run
+        run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+
