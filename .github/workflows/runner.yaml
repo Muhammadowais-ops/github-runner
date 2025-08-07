@@ -27,4 +27,6 @@ jobs:
           java-version: ${{ matrix.java-version }}
           distribution: 'temurin'
       - name: Check javac version
-        run: javac -version
+        run: |
+          javac -version
+          whoami
